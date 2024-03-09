@@ -1,0 +1,695 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    outline: none;
+}
+
+.nav-link:hover {
+    border-bottom: 3px solid yellow;
+    color: rgba(255, 255, 0, 0.5);
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+
+/* *banner */
+
+.banner-container {
+    position: relative;
+}
+
+.banner-img {
+    width: 100%;
+    height: 400px;
+    opacity: 0.8;
+}
+
+.banner-info {
+    position: absolute;
+    top: 10%;
+}
+
+.banner-title {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    width: 300px;
+}
+
+.banner-subtitle {
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+}
+
+.banner-about {
+    width: 300px;
+    font-size: 12px;
+    color: white;
+}
+
+.start-btn {
+    color: white;
+    text-transform: uppercase;
+}
+
+.view-btn {
+    text-transform: uppercase;
+}
+
+
+/* * learnig path card */
+
+.learning-path2 {
+    background-color: rgba(181, 213, 106, 1);
+}
+
+.learning-path3 {
+    background-color: rgba(255, 111, 111, 1);
+}
+
+.path-img {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.path-title {
+    font-size: 20px;
+    text-transform: capitalize;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.path-about {
+    font-size: 12px;
+    color: white;
+    text-align: center;
+}
+
+
+/* *welcome */
+
+.welcome-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: 200px;
+    margin: 0 auto;
+    padding: 8px;
+    border-bottom: 1px solid rgb(96, 96, 96);
+    margin-bottom: 10px;
+}
+
+.welcome-about {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.read-more {
+    cursor: pointer;
+}
+
+.welcome-img {
+    width: 100%;
+}
+
+
+/* *course card */
+
+.course-name {
+    font-size: 15px;
+    font-weight: bold;
+    width: 300px;
+    padding: 8px;
+}
+
+.fa-star {
+    color: yellow;
+}
+
+.course-card-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(96, 96, 96);
+    padding-bottom: 5px;
+}
+
+.course-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.card {
+    cursor: pointer;
+}
+
+.card:hover {
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* *course card overlay */
+
+.img-overlay-fade {
+    position: relative;
+}
+
+.imgOverlay {
+    display: block;
+    height: auto;
+    width: 100%;
+    transition: 0.5s ease-in-out;
+}
+
+.middle {
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 0;
+    background-color: rgba(254, 199, 34, 0.5);
+    text-align: center;
+}
+
+.apply-text {
+    background-color: yellow;
+    color: black;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+/* .img-overlay-fade:hover .imgOverlay {
+    opacity: 0.5;
+} */
+
+.img-overlay-fade:hover .middle {
+    opacity: 1;
+    bottom: 0;
+    height: 100%;
+}
+
+
+/* *video */
+
+.video-img {
+    width: 100%;
+    opacity: 0.7;
+}
+
+.video-about {
+    position: relative;
+}
+
+.video-info {
+    position: absolute;
+}
+
+.fa-play {
+    color: yellow;
+    border-radius: 10px;
+    font-size: 30px;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    cursor: pointer;
+}
+
+.video-content {
+    position: absolute;
+    left: 30px;
+    top: 65%;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* *event */
+
+.event-img {
+    width: 100%;
+}
+
+.event-title {
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.event-place {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.calendar,
+.time,
+.place {
+    margin-left: 5px;
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.event-about {
+    font-size: 12px;
+    color: rgba(96, 96, 96, 0, 5);
+    text-align: center;
+}
+
+.more {
+    text-align: center;
+}
+
+
+/* *uni */
+
+.uniImg {
+    width: 100%;
+}
+
+.uni-information {
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+}
+
+.about-uni {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.uni-story {
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+.uni-text {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+.uni-sub {
+    font-size: 12px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+
+/* *purchase */
+
+.purchase-container {
+    background-color: white;
+}
+
+.purchase-title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.purchase-content {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.purchase-theme {
+    background-color: yellow;
+    padding: 20px;
+}
+
+.theme {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* *public */
+
+.public-img {
+    width: 324px;
+    height: 300px;
+}
+
+.public-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.public-price {
+    color: yellow;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.buy-btn {
+    border: 2px solid rgb(96, 96, 96);
+    text-transform: uppercase;
+}
+
+.buy-btn:hover {
+    background-color: yellow;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+
+/* *news */
+
+.news-img {
+    display: none;
+}
+
+.news-title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.news-title {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.news-place {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.news-calendar,
+.news-person,
+.news-message {
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+}
+
+.news-header {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* *parents */
+
+.parent-img-container {
+    position: relative;
+}
+
+.parent1-img {
+    position: absolute;
+    left: 30%;
+    z-index: 2;
+}
+
+.parent2-img {
+    position: absolute;
+}
+
+.parent3-img {
+    position: absolute;
+    left: 60%;
+    z-index: 1;
+}
+
+.parent-container {
+    margin-top: 10rem;
+}
+
+.parents-say {
+    font-size: 15px;
+    color: rgb(96, 96, 96);
+    text-align: center;
+}
+
+.rating {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.parent-title {
+    font-family: 30px;
+    font-weight: bold;
+}
+
+
+/* *register */
+
+.register-img {
+    display: none;
+}
+
+.register-info {
+    background-color: rgba(255, 255, 0, 0.7);
+}
+
+.register-content {
+    padding: 15px;
+}
+
+.register-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.register-text {
+    font-size: 15px;
+    color: rgb(96, 96, 96);
+}
+
+.register-btn {
+    padding: 10px;
+}
+
+
+/* *footer */
+
+.footer-text {
+    font-size: 15px;
+    color: rgb(96, 96, 96);
+}
+
+.footer-phone,
+.footer-email,
+.footer-address {
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+}
+
+.courses-lists,
+.links-items,
+.support-items {
+    padding: 15px;
+}
+
+.course-item,
+.links-item,
+.support-item {
+    list-style: none;
+    width: 200px;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: rgb(96, 96, 96);
+}
+
+.touch-text {
+    width: 250px;
+    font-size: 15px;
+    margin-top: 8px;
+    color: rgb(96, 96, 96);
+}
+
+.email-floating {
+    width: 200px;
+}
+
+.touchTitle,
+.supportTitle,
+.linksTitle,
+.couresTitle,
+.uniTitle {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+@media screen and (min-width:992px) {
+    .navbar-brand {
+        margin-right: 7rem;
+        margin-left: 10px;
+    }
+    .nav-item {
+        margin-left: 10px;
+    }
+    /* *banner */
+    .banner-info {
+        margin-left: 5rem;
+    }
+    /* *learning path */
+    .learningPath {
+        position: absolute;
+        top: 70%;
+    }
+    /* *welcome */
+    .welcome {
+        margin-top: 20rem;
+    }
+    .welcome-title {
+        width: 400px;
+    }
+    /* *video */
+    .video-content {
+        font-size: 30px;
+        top: 60%;
+        left: 15%;
+    }
+    .event-container {
+        display: flex;
+    }
+    .event-img {
+        width: 300px;
+        height: 325px;
+        margin-right: 10px;
+    }
+    /* *uni */
+    .uni-img {
+        position: relative;
+    }
+    .uniImg {
+        opacity: 0.6;
+    }
+    .uni-information {
+        position: absolute;
+        top: 40%;
+        left: 10%;
+        background-color: transparent;
+    }
+    .about-uni {
+        gap: 30px;
+    }
+    .uni-sub {
+        width: 400px;
+    }
+    .purchase-container {
+        margin-right: 20px;
+        text-align: center;
+    }
+    .purchase-content {
+        padding: 30px;
+    }
+    .purchase-theme {
+        padding: 20px;
+    }
+    /* *public */
+    .public-img {
+        width: 100%;
+    }
+    .public-title {
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    /* *news */
+    .news-header {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .news-img {
+        display: block;
+        width: 100%;
+        opacity: 0.8;
+        height: 500px;
+    }
+    .news-container {
+        position: relative;
+    }
+    .news-info {
+        position: absolute;
+        top: 8%;
+        padding: 20px;
+    }
+    /* *parents */
+    .parent1-img {
+        width: 100px;
+        height: 100px;
+        left: 50%;
+    }
+    .parent2-img {
+        width: 70px;
+        height: 70px;
+        left: 43%;
+    }
+    .parent3-img {
+        width: 70px;
+        height: 70px;
+        left: 63%;
+    }
+    /* *register */
+    .register-img {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+    .register-container {
+        position: relative;
+    }
+    .register-info {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 200px;
+        width: 100%;
+        background-color: rgba(255, 255, 0, 0.5);
+    }
+    .register-btn {
+        padding: 10px;
+    }
+    .register-text {
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
